@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <audio src="https://7oom.ru/audio/naturesounds/07%20Birds%20(7oom.ru).mp3"></audio>
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+
+      </div>
+      <div class="timeline">
+        <div class="progress"></div>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class = "settings">
+      <h3 class="title-settings">Settings</h3>
+      <div class="lang">
+        <label class="language-label">Select Language</label>
+        <select class="choose-lang" name="choose-lang" id="lang-select">
+          <option value="en">en</option>
+          <option value="ru">ru</option>
+          <option value="be">be</option>
+        </select>
+      </div>
+      <div class="image-api">
+        <label class="image-label">Select image API</label>
+        <select class="choose-image" name="choose-image" id="image-select">
+          <option value="file">Standart</option>
+          <option value="unsplash">Unsplash API</option>
+          <option value="flick">Flickr API</option>
+        </select>
+      </div>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" value = "Minsk"/>
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" />
+    </div>
+  </main>
+  <footer class="footer">
+    <button class="change-quote"></button>
+    <div class="quote-wrap">
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+    <div class="footer__wrap">
+      <div class= "github">
+          <a href="https://github.com/ADziakon" class="github__link">
+              <img src="./assets/img/github.png" width = "30" height="30" alt="my_github">Github</a>
+      </div>
+      <div class="copy"><p>&copy;2022</p></div>
+      <div class="rsschool">
+          <a href="https://rs.school/js/" class="rsslink">
+              <img src="./assets/img/rs_school_js.svg" width = "50" height="20" alt="rs_school_js">
+          </a>
+      </div>
+  </div>
+  </footer>
+  <script type="module" src="scripts/index.js"></script>
+</body>
+</html>
