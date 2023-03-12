@@ -1,2 +1,1 @@
-# momentum
-Momentum - аналог одноимённого приложения интернет-магазина Chrome.
+# stage1-tasks
